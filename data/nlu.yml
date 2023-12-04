@@ -1,0 +1,525 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later  
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: weather
+  examples: |
+    - what's the weather now
+    - i want to know the weather of today
+    - tell me the weather forecast
+    - hows the weather today
+    - what's the weather today    
+    - is it hot today ?
+    - what's the weather now ?
+    
+
+- intent: give_city
+  examples: |
+    - what's the weather like today in [Abilene](city)
+    - is it cold in [cairo](city) ?
+    - i want to know the weather in [New York](city) City.
+    - what's the weather in [cairo](city)
+    - what's the weather like in [cario](city)
+    - the city I want is [Hagerstown](city)
+    - it's [Independence](city) city
+    - it's [Huntington Beach](city)
+    - i want it for [Lacey](city) city
+    - my city is [Delhi](city)
+    - [delhi](city)
+    - [chandigarh](city)
+    - [mohali](city)
+    - [mumbai](city)
+    - [jaipur](city)
+    - [alexandria](city)
+    - [cairo](city)
+    - [Aberdeen](city)
+    - [Abilene](city)
+    - [Akron](city)
+    - [Albany](city)
+    - [Albuquerque](city)
+    - [Alexandria](city)
+    - [Allentown](city)
+    - [Amarillo](city)
+    - [Anaheim](city)
+    - [Anchorage](city)
+    - [Ann Arbor](city)
+    - [Antioch](city)
+    - [Apple Valley](city)
+    - [Appleton](city)
+    - [Arlington](city)
+    - [Arvada](city)
+    - [Asheville](city)
+    - [Athens](city)
+    - [Atlanta](city)
+    - [Atlantic City](city)
+    - [Augusta](city)
+    - [Aurora](city)
+    - [Austin](city)
+    - [Bakersfield](city)
+    - [Baltimore](city)
+    - [Barnstable](city)
+    - [Baton Rouge](city)
+    - [Beaumont](city)
+    - [Bel Air](city)
+    - [Bellevue](city)
+    - [Berkeley](city)
+    - [Bethlehem](city)
+    - [Billings](city)
+    - [Birmingham](city)
+    - [Bloomington](city)
+    - [Boise](city)
+    - [Boise City](city)
+    - [Bonita Springs](city)
+    - [Boston](city)
+    - [Boulder](city)
+    - [Bradenton](city)
+    - [Bremerton](city)
+    - [Bridgeport](city)
+    - [Brighton](city)
+    - [Brownsville](city)
+    - [Bryan](city)
+    - [Buffalo](city)
+    - [Burbank](city)
+    - [Burlington](city)
+    - [Cambridge](city)
+    - [Canton](city)
+    - [Cape Coral](city)
+    - [Carrollton](city)
+    - [Cary](city)
+    - [Cathedral City](city)
+    - [Cedar Rapids](city)
+    - [Champaign](city)
+    - [Chandler](city)
+    - [Charleston](city)
+    - [Charlotte](city)
+    - [Chattanooga](city)
+    - [Chesapeake](city)
+    - [Chicago](city)
+    - [Chula Vista](city)
+    - [Cincinnati](city)
+    - [Clarke County](city)
+    - [Clarksville](city)
+    - [Clearwater](city)
+    - [Cleveland](city)
+    - [College Station](city)
+    - [Colorado Springs](city)
+    - [Columbia](city)
+    - [Columbus](city)
+    - [Concord](city)
+    - [Coral Springs](city)
+    - [Corona](city)
+    - [Corpus Christi](city)
+    - [Costa Mesa](city)
+    - [Dallas](city)
+    - [Daly City](city)
+    - [Danbury](city)
+    - [Davenport](city)
+    - [Davidson County](city)
+    - [Dayton](city)
+    - [Daytona Beach](city)
+    - [Deltona](city)
+    - [Denton](city)
+    - [Denver](city)
+    - [Des Moines](city)
+    - [Detroit](city)
+    - [Downey](city)
+    - [Duluth](city)
+    - [Durham](city)
+    - [El Monte](city)
+    - [El Paso](city)
+    - [Elizabeth](city)
+    - [Elk Grove](city)
+    - [Elkhart](city)
+    - [Erie](city)
+    - [Escondido](city)
+    - [Eugene](city)
+    - [Evansville](city)
+    - [Fairfield](city)
+    - [Fargo](city)
+    - [Fayetteville](city)
+    - [Fitchburg](city)
+    - [Flint](city)
+    - [Fontana](city)
+    - [Fort Collins](city)
+    - [Fort Lauderdale](city)
+    - [Fort Smith](city)
+    - [Fort Walton Beach](city)
+    - [Fort Wayne](city)
+    - [Fort Worth](city)
+    - [Frederick](city)
+    - [Fremont](city)
+    - [Fresno](city)
+    - [Fullerton](city)
+    - [Gainesville](city)
+    - [Garden Grove](city)
+    - [Garland](city)
+    - [Gastonia](city)
+    - [Gilbert](city)
+    - [Glendale](city)
+    - [Grand Prairie](city)
+    - [Grand Rapids](city)
+    - [Grayslake](city)
+    - [Green Bay](city)
+    - [GreenBay](city)
+    - [Greensboro](city)
+    - [Greenville](city)
+    - [Gulfport-Biloxi](city)
+    - [Hampton](city)
+    - [Harlingen](city)
+    - [Harrisburg](city)
+    - [Hartford](city)
+    - [Havre de Grace](city)
+    - [Hayward](city)
+    - [Hemet](city)
+    - [Henderson](city)
+    - [Hesperia](city)
+    - [Hialeah](city)
+    - [Hickory](city)
+    - [High Point](city)
+    - [Hollywood](city)
+    - [Honolulu](city)
+    - [Houma](city)
+    - [Houston](city)
+    - [Howell](city)
+    - [Huntington](city)
+    - [Huntsville](city)
+    - [Indianapolis](city)
+    - [Inglewood](city)
+    - [Irvine](city)
+    - [Irving](city)
+    - [Jackson](city)
+    - [Jacksonville](city)
+    - [Jefferson](city)
+    - [Jersey City](city)
+    - [Johnson City](city)
+    - [Joliet](city)
+    - [Kailua](city)
+    - [Kalamazoo](city)
+    - [Kaneohe](city)
+    - [Kansas City](city)
+    - [Kennewick](city)
+    - [Kenosha](city)
+    - [Killeen](city)
+    - [Kissimmee](city)
+    - [Knoxville](city)
+    - [Lafayette](city)
+    - [Lake Charles](city)
+    - [Lakeland](city)
+    - [Lakewood](city)
+    - [Lancaster](city)
+    - [Lansing](city)
+    - [Laredo](city)
+    - [Las Cruces](city)
+    - [Las Vegas](city) is the city
+    - [Layton](city)
+    - [Leominster](city)
+    - [Lewisville](city)
+    - [Lexington](city)
+    - [Lincoln](city)
+    - [Little Rock](city)
+    - [Long Beach](city)
+    - [Lorain](city) is the place
+    - [Los Angeles](city)
+    - [Louisville](city)
+    - [Lowell](city)
+    - [Lubbock](city)
+    - [Macon](city)
+    - [Madison](city)
+    - the city is [Manchester](city)
+    - [Marina](city)
+    - [Marysville](city)
+    - [McAllen](city)
+    - [McHenry](city)
+    - [Medford](city)
+    - [Melbourne](city)
+    - [Memphis](city)
+    - [Merced](city)
+    - [Mesa](city)
+    - [Mesquite](city)
+    - [Miami](city)
+    - [Milwaukee](city)
+    - [Minneapolis](city)
+    - [Miramar](city)
+    - [Mission Viejo](city)
+    - [Mobile](city)
+    - [Modesto](city)
+    - [Monroe](city)
+    - [Monterey](city)
+    - [Montgomery](city)
+    - [Moreno Valley](city)
+    - [Murfreesboro](city)
+    - [Murrieta](city)
+    - [Muskegon](city)
+    - [Myrtle Beach](city)
+    - [Naperville](city)
+    - [Naples](city)
+    - [Nashua](city)
+    - [Nashville](city)
+    - [New Bedford](city)
+    - [New Haven](city)
+    - [New London](city)
+    - [New Orleans](city)
+    - [New York](city)
+    - [New York City](city)
+    - [Newark](city)
+    - [Newburgh](city)
+    - [Newport News](city)
+    - [Norfolk](city)
+    - [Normal](city)
+    - [Norman](city)
+    - [North Charleston](city)
+    - [North Las Vegas](city)
+    - [North Port](city)
+    - [Norwalk](city)
+    - [Norwich](city)
+    - [Oakland](city)
+    - [Ocala](city)
+    - [Oceanside](city)
+    - [Odessa](city)
+    - [Ogden](city)
+    - [Oklahoma City](city)
+    - [Olathe](city)
+    - [Olympia](city)
+    - [Omaha](city)
+    - [Ontario](city)
+    - [Orange](city)
+    - [Orem](city)
+    - [Orlando](city)
+    - [Overland Park](city)
+    - [Oxnard](city)
+    - [Palm Bay](city)
+    - [Palm Springs](city)
+    - [Palmdale](city)
+    - [Panama City](city)
+    - [Pasadena](city)
+    - [Paterson](city)
+    - [Pembroke Pines](city)
+    - [Pensacola](city)
+    - [Peoria](city)
+    - [Philadelphia](city)
+    - [Phoenix](city)
+    - [Pittsburgh](city)
+    - [Plano](city)
+    - [Pomona](city)
+    - [Pompano Beach](city)
+    - [Port Arthur](city)
+    - [Port Orange](city)
+    - [Port Saint Lucie](city)
+    - [Port St. Lucie](city)
+    - [Portland](city)
+    - [Portsmouth](city)
+    - [Poughkeepsie](city)
+    - [Providence](city)
+    - [Provo](city)
+    - [Pueblo](city)
+    - [Punta Gorda](city)
+    - [Racine](city)
+    - [Raleigh](city)
+    - [Rancho Cucamonga](city)
+    - [Reading](city)
+    - [Redding](city)
+    - [Reno](city)
+    - [Richland](city)
+    - [Richmond](city)
+    - [Richmond County](city)
+    - [Riverside](city)
+    - [Roanoke](city)
+    - [Rochester](city)
+    - [Rockford](city)
+    - [Roseville](city)
+    - [Round Lake Beach](city)
+    - [Sacramento](city)
+    - [Saginaw](city)
+    - [Saint Louis](city)
+    - [Saint Paul](city)
+    - [Saint Petersburg](city)
+    - [Salem](city)
+    - [Salinas](city)
+    - [Salt Lake City](city)
+    - [San Antonio](city)
+    - [San Bernardino](city)
+    - [San Buenaventura](city)
+    - [San Diego](city)
+    - [San Francisco](city)
+    - [San Jose](city)
+    - [Santa Ana](city)
+    - [Santa Barbara](city)
+    - [Santa Clara](city)
+    - [Santa Clarita](city)
+    - [Santa Cruz](city)
+    - [Santa Maria](city)
+    - [Santa Rosa](city)
+    - [Sarasota](city)
+    - [Savannah](city)
+    - [Scottsdale](city)
+    - [Scranton](city)
+    - [Seaside](city)
+    - [Seattle](city)
+    - [Sebastian](city)
+    - [Shreveport](city)
+    - [Simi Valley](city)
+    - [Sioux City](city)
+    - [Sioux Falls](city)
+    - [South Bend](city)
+    - [South Lyon](city)
+    - [Spartanburg](city)
+    - [Spokane](city)
+    - [Springdale](city)
+    - [Springfield](city)
+    - [St. Louis](city)
+    - [St. Paul](city)
+    - [St. Petersburg](city)
+    - [Stamford](city)
+    - [Sterling Heights](city)
+    - [Stockton](city)
+    - [Sunnyvale](city)
+    - [Syracuse](city)
+    - [Tacoma](city)
+    - [Tallahassee](city)
+    - [Tampa](city)
+    - [Temecula](city)
+    - [Tempe](city)
+    - [Thornton](city)
+    - [Thousand Oaks](city)
+    - [Toledo](city)
+    - [Topeka](city)
+    - [Torrance](city)
+    - [Trenton](city)
+    - [Tucson](city)
+    - [Tulsa](city)
+    - [Tuscaloosa](city)
+    - [Tyler](city)
+    - [Utica](city)
+    - [Vallejo](city)
+    - [Vancouver](city)
+    - [Vero Beach](city)
+    - [Victorville](city)
+    - [Virginia Beach](city)
+    - [Visalia](city)
+    - [Waco](city)
+    - [Warren](city)
+    - [Washington](city)
+    - [Waterbury](city)
+    - [Waterloo](city)
+    - [West Covina](city)
+    - [West Valley City](city)
+    - [Westminster](city)
+    - [Wichita](city)
+    - [Wilmington](city)
+    - [Winston](city)
+    - [Winter Haven](city)
+    - [Worcester](city)
+    - [Yakima](city)
+    - [Yonkers](city)
+    - [York](city)
+    - [Youngstown](city)
+
+- intent: stop
+  examples: |
+    - ok then you cant help me
+    - that was shit, you're not helping
+    - you can't help me
+    - you can't help me with what i need
+    - i guess you can't help me then
+    - ok i guess you can't help me
+    - that's not what i want
+    - ok, but that doesnt help me
+    - this is leading to nothing
+    - this conversation is not really helpful
+    - you cannot help me with what I want
+    - I think you cant help me
+    - hm i don't think you can do what i want
+    - stop
+    - stop go back
+    - do you get anything?
+    - and you call yourself bot company? pff
+    - and that's it?
+    - nothing else?
